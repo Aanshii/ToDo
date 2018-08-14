@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 public class TodoPage extends AppCompatActivity {
 
+    // It will have backend logic for to do item adding page
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

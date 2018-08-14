@@ -13,15 +13,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button click=(Button)findViewById(R.id.button2);
+        //get button and onclick activity
         click.setOnClickListener(
                 new  Button.OnClickListener(){
                     @Override
                     public void onClick(View view) {
+                        //new To do item adding activity page starts on button click
                         Intent myIntent = new Intent(MainActivity.this,
                                 TodoPage.class);
                         startActivity(myIntent);
                     }
                 }
+
         );
 
     }
